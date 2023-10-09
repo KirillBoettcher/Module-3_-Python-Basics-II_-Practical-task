@@ -52,7 +52,7 @@ print("Die Fläche des Dreiecks ist", triangle_area(a, b, c))
 
 
 
-Модуль 4 Уровень 2
+# Модуль 4 Уровень 2
 
 import json
 
