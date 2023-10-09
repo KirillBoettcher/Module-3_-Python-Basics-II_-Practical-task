@@ -75,5 +75,3 @@ def register(login, passwd):
     else:
         print('Пользователь уже существует')
 
-сумма цифр числа
-
