@@ -1,0 +1,79 @@
+
+# Модуль 3  Часть 1 Уровень 1
+
+
+x = int(input())
+p = int(input())
+y = int(input())
+i = 0
+while x < y:
+    x *= 1 + p / 100
+    x = int(100 * x) / 100
+    i += 1
+print(i)
+
+# Модуль 3  Часть 1 Уровень 3
+
+number = input('Введите целое число')
+sum_digits = 0
+for digit in str(number):
+    sum_digits += int(digit)
+
+print("Сумма цифр числа", number, "равна", sum_digits)
+
+
+
+# Модуль 3  Часть 2 Уровень 1
+
+my_list = [1, 4, 1, 6, "hello", "a", 5, "hello"]
+duplicates = []
+
+for item in my_list:
+    if my_list.count(item) > 1 and item not in duplicates:
+        duplicates.append(item)
+
+print("Повторяющиеся элементы в списке:", duplicates)
+
+
+функция логин и пароль регистрации json файл
+
+площадь треугольника по трём сторонам
+
+
+# Модуль 3  Часть 3 Уровень 1
+
+
+def triangle_area(a, b, c):
+    p = (a + b + c) / 2
+    return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+
+
+a = float(input("Eingabe a: "))
+b = float(input("Eingabe b: "))
+c = float(input("Eingabe c: "))
+
+# Printing the result
+print("Die Fläche des Dreiecks ist", triangle_area(a, b, c))
+
+
+
+Модуль 4 Уровень 2
+
+import json
+
+data_register = {'Kirill': 1234}
+with open('loginkirill.json', 'w') as f:
+    json.dump(data_register, f)
+
+def register(login, passwd):
+    with open('loginkirill.json', 'r') as f:
+        data_register = json.load(f)
+    if login not in data_register.keys():
+         data_register[login] = passwd
+         with open('loginkirill.json', 'w') as f:
+             json.dump(data_register, f)
+    else:
+        print('Пользователь уже существует')
+
+сумма цифр числа
+
